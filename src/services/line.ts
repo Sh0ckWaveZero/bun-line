@@ -2,10 +2,10 @@ import { CONSOLATION, IMAGE_GOLD_URLS, IMAGE_URLS } from '@/config/common.consta
 import axios from 'axios';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { CryptoInfo } from '@/interface';
-import prisma from '@/lib/prisma';
 import randomColor from '@/utils/randomColor';
 import { utils } from '@/utils';
 import { exchangeService } from './exchange';
+import prisma from '../../lib/prisma';
 
 const handleEvent = (req: NextApiRequest,
   res: NextApiResponse): any => {

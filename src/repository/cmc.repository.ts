@@ -1,5 +1,4 @@
-import prisma from '@/lib/prisma';
-
+import prisma from '../../lib/prisma';
 
 function findBySymbol(symbol: string) {
   return prisma.cmc.findFirst({
