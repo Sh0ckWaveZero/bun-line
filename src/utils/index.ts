@@ -9,7 +9,6 @@ const template = <T>(
 ): string => {
   let output = '';
   for (let i = 0; i < param.length; i += 1) {
-    // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
     output += templateData[i] + param[i];
   }
   output += templateData[param.length];
@@ -44,8 +43,6 @@ const isKeyOfSchema = <T extends object>(
 }
 
 const removeUndefined = <T extends object>(argv: T): Record<string, unknown> => {
-  // https://stackoverflow.com/questions/25421233
-  // JSON.parse(JSON.stringify(args));
   return Object.fromEntries(
     Object.entries(argv).filter(
       ([, value]: [string, unknown]) => value !== undefined,
