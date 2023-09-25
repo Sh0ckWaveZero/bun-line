@@ -433,8 +433,10 @@ const HexToHSB = (hex: string): [number, number, number] => {
     case red: return [60 * (((green - blue) / delta) % 6) || 0, saturation, cMax];
     case green: return [60 * (((blue - red) / delta) + 2) || 0, saturation, cMax];
     case blue: return [60 * (((red - green) / delta) + 4) || 0, saturation, cMax];
+    default: return [0, 0, 0]; // Provide a default return value
   }
 }
+
 
 const HSVtoHSL = (hsv: number[]): number[] => {
   const h = hsv[0];

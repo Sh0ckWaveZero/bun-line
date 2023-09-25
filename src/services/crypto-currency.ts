@@ -14,7 +14,7 @@ const mapSymbolsThai = (symbols: string): string => {
 const getCurrencyLogo = async (currencyName: string): Promise<any> => {
   try {
     const res = await cmcService.findOne(currencyName.toUpperCase());
-    const cmcCurrenciesLogo = `https://s2.coinmarketcap.com/static/img/coins/128x128/${res.no}.png`;
+    const cmcCurrenciesLogo = `https://s2.coinmarketcap.com/static/img/coins/128x128/${res?.no}.png`;
     let response: any;
     if (!res) {
       response = await axios.get(
