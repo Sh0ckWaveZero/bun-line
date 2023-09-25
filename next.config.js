@@ -9,6 +9,7 @@ const nextConfig = {
 
     return config
   },
+  runtime: 'experimental-edge',
 }
 
 module.exports = nextConfig
