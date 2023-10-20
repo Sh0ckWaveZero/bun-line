@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  runtime: 'experimental-edge',
+  runtime: 'edge', // for Edge API Routes only
 }
 
 module.exports = nextConfig
