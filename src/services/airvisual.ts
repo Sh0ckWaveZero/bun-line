@@ -6,7 +6,6 @@ const getNearestCity = async (latitude: number, longitude: number): Promise<any>
       method: 'GET',
     });
     const data = await response.json();
-    console.dir(data, { depth: null });
     return data;
   } catch (error) {
     return error;
