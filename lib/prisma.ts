@@ -1,4 +1,3 @@
-// import { PrismaClient } from '@prisma/client/edge'
 import { PrismaClient } from '../node_modules/.prisma/client'
 
 const prismaClientSingleton = () => {
