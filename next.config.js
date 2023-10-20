@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  /* config options here */
+  runtime: 'experimental-edge',
 }
 
 module.exports = nextConfig
